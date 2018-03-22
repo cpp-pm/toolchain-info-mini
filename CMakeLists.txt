@@ -75,7 +75,7 @@ if(is_empty)
       "--- BEGING ---"
       "${outresult}"
       "--- END ---"
-      "(Try compile result: ${try_compile_result}"
+      "(Try compile result: ${try_compile_result})"
   )
 endif()
 
