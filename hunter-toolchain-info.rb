@@ -4,11 +4,11 @@ class HunterToolchainInfo < Formula
   version '0.0.1'
 
   homepage 'https://github.com/hunter-packages/toolchain-info-mini'
-  url 'https://github.com/hunter-packages/toolchain-info-mini', :branch => 'master'
+  url 'https://github.com/hunter-packages/toolchain-info-mini.git', :branch => 'master'
 
   devel do
     version '0.0.1'
-    url 'https://github.com/hunter-packages/toolchain-info-mini', :branch => 'master'
+    url 'https://github.com/hunter-packages/toolchain-info-mini.git', :branch => 'master'
   end
 
   depends_on 'cmake' => :build
