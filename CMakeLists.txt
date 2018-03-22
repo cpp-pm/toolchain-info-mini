@@ -6,6 +6,8 @@ project(toolchain-info-mini)
 
 set(predefined "${CMAKE_CURRENT_LIST_DIR}/ShowPredefined.cpp")
 
+execute_process(COMMAND printenv)
+
 try_compile(
     try_compile_result
     "${CMAKE_BINARY_DIR}/_test"
