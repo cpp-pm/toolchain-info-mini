@@ -5,6 +5,7 @@ set(CMAKE_TOOLCHAIN_FILE "${CMAKE_CURRENT_LIST_DIR}/toolchain.cmake" CACHE PATH 
 project(toolchain-info-mini)
 
 set(ENV{HOMEBREW_CCCFG} "")
+unset(ENV{HOMEBREW_CCCFG})
 
 set(predefined "${CMAKE_CURRENT_LIST_DIR}/ShowPredefined.cpp")
 
