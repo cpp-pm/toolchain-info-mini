@@ -23,6 +23,7 @@ class HunterToolchainInfo < Formula
     end
 
     args << "-DHUNTER_STATUS_DEBUG=ON"
+    args << "--debug-trycompile"
 
     system "cmake", *args
     system "make"
