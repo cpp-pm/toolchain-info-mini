@@ -69,7 +69,11 @@ endforeach()
 
 string(COMPARE EQUAL "${macroses}" "" is_empty)
 if(is_empty)
-  message(FATAL_ERROR "No toolchain info generated")
+  message(
+      FATAL_ERROR
+      "No toolchain info generated from output:\n"
+      "${outresult}"
+  )
 endif()
 
 message("Predefined macroses:\n${macroses}")
