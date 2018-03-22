@@ -72,7 +72,10 @@ if(is_empty)
   message(
       FATAL_ERROR
       "No toolchain info generated from output:\n"
+      "--- BEGING ---"
       "${outresult}"
+      "--- END ---"
+      "(Try compile result: ${try_compile_result}"
   )
 endif()
 
